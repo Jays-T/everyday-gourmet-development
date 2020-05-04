@@ -1,11 +1,6 @@
-# <a href="https://jays-t.github.io/everyday-gourmet/">Everyday Gourmet</a> - Milestone Two Project for Code Institute Fullstack Web Developer course
-
-* Hello! This is my Milestone Two project for the <a href="https://codeinstitute.net/" target="_blank">Code Institute</a> Fullstack Web Developer course.
+# <a href="https://jays-t.github.io/everyday-gourmet/">Everyday Gourmet</a> - Everyday Gourmet
 
 * This project is purely for educational purposes.
-
-## Demo
-* A live demo of the site can be found <a href="https://jays-t.github.io/everyday-gourmet/index.html" target="_blank>here</a>.
 
 # CONTENTS
 * UX

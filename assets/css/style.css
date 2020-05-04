@@ -61,11 +61,6 @@ html h1 {
     letter-spacing: 0.12em;
 }
 
-.text-padding {
-    padding-left: 39.5%;
-    padding-right: 39.5%;
-}
-
 .fancy-text {
     font-family: 'Yellowtail', cursive;
 }
@@ -354,8 +349,8 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 }
 
 .input-text-areas-width {
-    padding-left: 28vw;
-    padding-right: 28vw;
+    padding-left: 22vw;
+    padding-right: 22vw;
 }
 
 /* ------------------------------ Social Media Links */
@@ -458,9 +453,9 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 }
 
 @media screen and (max-width: 768px) {
-    .text-padding {
-    padding-left: 30.5%;
-    padding-right: 30.5%;
+    .input-text-areas-width {
+    padding-left: 3.8vw;
+    padding-right: 3.8vw;
 }
 }
 
@@ -480,8 +475,8 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     letter-spacing: 0.1em;
 }
 .input-text-areas-width {
-    padding-left: 2.8vw;
-    padding-right: 2.8vw;
+    padding-left: 6.2vw;
+    padding-right: 6.2vw;
 }
 .bg-img-index {
     background-image: url("../images/close-up-of-wine-and-fruits-578x900.jpg");
@@ -499,14 +494,18 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     left: 0;
 }
 
+.font-montserrat {
+    font-size: 0.8rem;
+}
+
+#navigation ul li a {
+    font-size: 0.6rem;
+}
+
 .navbar-brand {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
-    font-size: 0.6rem;
 }
-.text-padding {
-    padding-left: 17.5%;
-    padding-right: 17.5%;
-}
+
 }
 

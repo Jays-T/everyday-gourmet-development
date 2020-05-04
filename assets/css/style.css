@@ -1,0 +1,512 @@
+/* ------------------------------ global styles and font styling */
+body {
+    position: relative;
+}
+
+.col-sm-10 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.light-text {
+    color: rgb(235, 233, 233);
+}
+
+.dark-text {
+    color: #000;
+}
+
+.btn:hover {
+    color: rgba(241, 75, 83, 0.8);
+    transition: all .3s ease-in-out; 
+}
+
+.btn-blur:hover {
+    color: rgba(73, 67, 67, 0.7);
+    transition: all .3s ease-in-out;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+input,textarea {
+     width:100%;
+     display:block 
+}
+
+html h1 {
+    text-transform: uppercase;
+    font-size: 5.9vw;
+}
+
+.text-spacing {
+    letter-spacing: 0.12em;
+}
+
+.text-padding {
+    padding-left: 39.5%;
+    padding-right: 39.5%;
+}
+
+.fancy-text {
+    font-family: 'Yellowtail', cursive;
+}
+
+.fancy-large {
+    font-size: 2em;
+}
+
+.fancy-small {
+    font-size: 1rem;
+}
+
+.fancy-thin {
+    font-weight: 100;
+}
+
+.margin-thin {
+    margin: .32vh;
+}
+
+.border-thin {
+    border-top: solid .5px rgba(236, 64, 73, 0.4);
+    border-bottom: solid .5px rgba(236, 64, 73, 0.4);
+}
+
+.border-top {
+    border-top: solid .5px rgba(73, 67, 67, 0.3);
+}
+
+.get-wine-bg {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.shadow-up {
+    box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
+}
+
+/* ------------------------------ Modal wine suggestion main styling */
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2vh 2vw;
+}
+
+.modal-flex-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-height {
+    min-height: 100%;
+}
+
+.btn-colors {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(235, 233, 233);
+}
+
+.btn-font-size {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.shop-border {
+    border-top: solid .8px rgba(243, 243, 243, 0.6);
+    border-bottom: solid .8px rgba(243, 243, 243, 0.6);
+}
+
+#center-wine-btn {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.wine-text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
+}
+/* ------------------------------ Navbar hover styling */
+
+.light-border-thin {
+    
+    border-top: solid .5px rgb(173, 158, 159);
+    border-bottom: solid .5px rgb(173, 158, 159);
+    transition: all .2s ease-in-out; 
+    transform: scaleX(1.4);
+}
+
+body a:hover {
+        color: rgba(241, 75, 83, 0.8);
+        transition: all .3s ease-in-out;
+        text-decoration: none; 
+}
+
+/* ------------------------------ Navbar styling */
+
+.navbar-fixed-transparent {
+    display: inline-block;
+    padding: 2vh 1vw;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    z-index: 3;
+    top: 2.8em;
+    left: 8vw;
+}
+
+
+.nav-ul-flex-sm {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* ------------------------------ Main content Styling */
+
+/* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx
+through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
+.main-bg {
+    z-index: 2;
+  background: 
+    radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+    linear-gradient(to right, var(--color), var(--color)),
+    var(--image);
+    background-color: #000;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+  background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;
+  
+  --image: url(../images/glass-of-red-wine-bg-1964x1386.jpg);
+  --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
+  
+  --color-v: black;
+  --color: transparent; 
+ 
+    box-shadow: 0 6rem 8rem #000;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.main-headlines {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 50%;
+    clear: both;
+    margin: 30vh 4vw 20vh 0;
+    padding: 1vh 1vw 1vh 15vw;
+    letter-spacing: 0.2em;
+
+}
+
+.arrow-wrapper {
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+/* Arrow by Rafael Amorim sourced from https://codepen.io/raf187/pen/BvgGRQ */
+.arrow{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%,-50%);*/
+}
+.arrow span{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-bottom: .5px solid rgba(241, 75, 83, 0.8);
+    border-right: .5px solid rgba(241, 75, 83, 0.8);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.fade-in-headlines {
+    max-width: 40%;
+    clear: both;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+#headline-one {
+    margin: 24vh 8vw 22vh 8vw;
+}
+
+#headline-two {
+    margin: 22vh 8vw 24vh 8vw;
+}
+
+
+.headlines {
+
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+    
+}
+
+/* ------------------------------ Background Image urls for main page Footer / Maps page (searchlocal) / Contact page */
+
+.bg-img-index, .bg-img-shop-local, .bg-img-contact {
+    background-image: url("../images/red-and-white-wine-with-peaches-grapes-and-cheese-2740x1320.jpg");
+    
+}
+
+/* ------------------------------ Footer and Wine Pairing submit form */
+
+.footer-sticky {
+    background-color: rgba(73, 67, 67, 0.3);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+  position: sticky;
+  padding-top: 7rem;
+  bottom: 0;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.content-anchor {
+    margin-top: auto;    
+}  
+
+/* -------------- Contact Us */
+
+.contact-us-page {
+  
+  position: relative;
+  padding-top: 7rem;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+.input-text-areas-width {
+    padding-left: 28vw;
+    padding-right: 28vw;
+}
+
+/* ------------------------------ Social Media Links */
+
+
+
+.social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.social-media-center {
+    justify-content: center;
+}
+
+.zoom {
+  transform: scale(2);
+  transition: all .3s ease-in-out;
+}
+
+.list-inline-item i:hover {
+      color: rgb(218, 32, 41);
+}
+
+          
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+
+    .main-bg {
+        background: 
+    radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+    linear-gradient(to right, var(--color), var(--color)),
+    var(--image2);
+    background-color: #000;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+  background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;
+  
+  --image: url(../images/glass-of-red-wine-bg-1954x1386.jpg);
+  --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
+  
+  --color-v: black;
+  --color: transparent; 
+ 
+    box-shadow: 0 2rem 3rem #000;
+
+    }
+
+    .fade-in-headlines {
+    margin: 14vh 4vw;
+}
+    .hero-text {
+
+        margin: 47vh 4vw 10vh 0;
+        padding: 10px;
+    }
+    .input-text-areas-width {
+    padding-left: 14vw;
+    padding-right: 14vw;
+}
+    .bg-img-index {
+    background-image: url("../images/close-up-of-wine-and-fruits-1000x1320.jpg");
+}
+
+.bg-img-shop-local {
+    background-image: url("../images/white-and-black-bottle-near-grapes-1000x1320.jpg"); 
+}
+
+.bg-img-contact {
+    background-image: url("../images/food-and-wine-bottles-on-table-by-lake-1000x1320.jpg");
+}
+
+.navbar-fixed-transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 83.3%;
+    top: 0;
+    left: 8.33vw;
+}
+
+
+.nav-ul-flex-sm {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    
+}
+
+@media screen and (max-width: 768px) {
+    .text-padding {
+    padding-left: 30.5%;
+    padding-right: 30.5%;
+}
+}
+
+@media screen and (max-width: 576px) {
+
+.fade-in-headlines {
+    max-width: 95%;
+    margin: 8vh 2vw;
+}
+
+.headlines {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-font-size {
+    font-size: .8rem;
+    letter-spacing: 0.1em;
+}
+.input-text-areas-width {
+    padding-left: 2.8vw;
+    padding-right: 2.8vw;
+}
+.bg-img-index {
+    background-image: url("../images/close-up-of-wine-and-fruits-578x900.jpg");
+}
+.bg-img-shop-local {
+    background-image: url("../images/white-and-black-bottle-near-grapes-578x900.jpg"); 
+}
+
+.bg-img-contact {
+    background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
+}
+.navbar-fixed-transparent {
+    min-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 0.6rem;
+}
+.text-padding {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+}
+

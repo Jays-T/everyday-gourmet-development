@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700%7CMontserrat:300,700%7CYellowtail:400,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Everday Gourmet</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+
+    <header id="home">
+
+      <nav id="navigation" class="navbar navbar-fixed-transparent rounded">
+        <ul class="nav nav-ul-flex-sm">
+              <li class="nav-item">
+              <a
+                class="smooth-scroll navbar-brand font-montserrat light-text"
+                href="#home"
+              >
+                <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
+                <span class="sr-only">home</span>
+                </a>
+                </li>
+          <li class="nav-item">
+            <a
+              id="wine-pairing"
+              class="smooth-scroll navbar-brand font-montserrat light-text uppercase text-spacing"
+              href="#footer-details"
+            >
+              Wine Pairing
+              <span class="sr-only">wine pairing</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              id="shop"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
+              href="searchlocal.html"
+            >
+              Shop Local
+              <span class="sr-only">shop local</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              id="contact"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
+              href="contact.html"
+            >
+              Contact
+              <span class="sr-only">contact page</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!--End of Navigation-->
+
+    <!-- Main landing page and fade in headlines -->
+
+    <section>
+      <div class="container-fluid main-bg">
+        <div class="main-headlines">
+          <h2 class="hero-text font-montserrat uppercase light-text border-thin">
+            Every day <span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small">ourmet</span>
+          </h2>
+          <div class="arrow-wrapper">
+            <a href="#headline-one" class="smooth-scroll">
+              <p class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+            </a>
+          </div>
+          <div
+            id="headline-one"
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p
+              class="headlines font-montserrat light-text center-text border-thin"
+            >
+              <br />
+              Hello and welcome to<br />
+              <br />
+              <span class="uppercase">EveryDay</span>
+              <span class="fancy-text fancy-large text-spacing">G</span
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span><br />
+              <br />
+              A premier wine pairing site.<br />
+              <br />
+            </p>
+          </div>
+
+          <div
+            id="headline-two"
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p
+              class="headlines font-montserrat light-text center-text border-thin"
+            >
+              <br />
+              Simply tell us <br />
+              what's on the menu.<br />
+              <br />
+              We'll suggest a fantastic wine <br />
+              to pair with your meal.<br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of Headlines-->
+
+      <!--Wine Suggestion Modal -->
+      <div class="modal fade" id="suggestion-modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+             <h5 class="center-text border-thin">
+              <span class="uppercase font-montserrat text-spacing">EveryDay</span>
+              <span class="fancy-text fancy-large">G</span
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span>
+              <button
+                type="button"
+                class="close close-modal font-montserrat fancy-large uppercase"
+                data-dismiss="modal"
+              >
+                ×
+              </button>
+            </h5>
+            <h4 class="font-montserrat dark-text uppercase center-text">
+            <br />
+              Suggested Wines
+            </h4>
+            <div id="pairingText" class="rounded">
+              <div id="suggestion-buttons" class="modal-flex-display">
+                <!--wine one-->
+                <button
+                  class="btn btn-blur btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  type="button"
+                >
+                  <i class="fas fa-wine-bottle modal-content dark-text"></i>
+                  <span id="link-wine-one"></span>
+                  <span class="font-lora fancy-thin wine-text-area">
+                    <span id="wine-one" class="border-thin"></span>
+                  </span>
+                </button>
+                <!--wine two-->
+                <button
+                  id="center-wine-btn"
+                  class="btn btn-blur btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  type="button"
+                >
+                  <i class="fas fa-wine-bottle modal-content dark-text"></i>
+                  <span id="link-wine-two"></span>
+                  <span class="font-lora fancy-thin wine-text-area">
+                    <span id="wine-two" class="border-thin"></span>
+                  </span>
+                </button>
+                <!--wine three-->
+                <button
+                  class="btn btn-blur btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  type="button"
+                >
+                  <i class="fas fa-wine-bottle modal-content dark-text"></i>
+                  <span id="link-wine-three"></span>
+                  <span class="font-lora fancy-thin wine-text-area">
+                    <span id="wine-three" class="border-thin"></span>
+                  </span>
+                </button>
+              </div>
+              <div class="modal-content center-text">
+                <!--paired text for wine selection-->
+                <p id="wine-text" class="font-montserrat border-thin text-spacing"></p>
+                <button
+                type="button"
+                class="close close-modal fancy-thin text-spacing"
+                data-dismiss="modal"
+              >
+                <span class="fancy-text fancy-large uppercase">C</span>lose
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Modal -->
+    </section>
+    
+
+    <!-- Footer / Main service/Wine Pairing section  -->
+
+    <div id="footer" class="container-fluid footer-sticky bg-img-index">
+      <div class="row social-media-center content-anchor">
+        <div
+          class="col-sm-10 center-text font-montserrat get-wine-bg light-text border-thin rounded"
+        >
+          <h4 class="font-montserrat text-spacing">Make Every Day<br /></h4>
+          <h2 class="border-thin">
+            <span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small text-spacing">ourmet</span>
+          </h2>
+              <a
+              class="btn font-montserrat uppercase border-thin btn-colors light-texttext-spacing"
+              href="https://www.wine.com"
+              target="_blank"
+              role="button"
+            >
+              Shop Wines Online</a>
+          <p class="text-padding">
+            Don't know which wine to choose? Let us suggest a fantastic pairing.<br />
+            All you have to do is let us know, what's on the menu...
+          </p>
+          <div class="input-group mb-3 input-text-areas-width">
+            <div class="input-group-prepend">
+              <button
+                class="btn font-montserrat uppercase border-thin btn-colors text-spacing"
+                id="getWine"
+                type="button"
+              >
+                Get Wine Pairing
+              </button>
+            </div>
+            <!--select food type-->
+            <select
+              class="custom-select font-montserrat border-thin get-wine-btn-bg dark-text"
+              id="foodSelect"
+              aria-label="Example select with button addon"
+            >
+              <option selected>Choose...</option>
+              <option value="1">Steak</option>
+              <option value="2">Fish</option>
+              <option value="3">Turkey</option>
+              <option value="4">Italian</option>
+              <option value="5">Spanish</option>
+              <option value="6">French</option>
+              <option value="7">Brie</option>
+              <option value="8">Blue Cheese</option>
+              <option value="9">Gruyere</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+
+      <div class="row social-media-center content-anchor">
+        <div class="col-sm-10 center-text social-media-links card-footer shadow-up rounded">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.facebook.com">
+                <i class="fab fa-facebook light-text" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.twitter.com">
+                <i class="fab fa-twitter light-text" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com">
+                <i class="fab fa-linkedin light-text" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.pinterest.com">
+                <i class="fab fa-pinterest light-text" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.instagram.com">
+                <i class="fab fa-instagram light-text" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.youtube.com">
+                <i class="fab fa-youtube light-text" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  id of footer-details placed here to ensure smooth scroll scrolls all the way to the end -->
+    <div id="footer-details"></div>
+
+    <!-- Scripts -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos-global.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/winesuggest.js"></script>
+  </body>
+</html>

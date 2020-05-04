@@ -1,0 +1,109 @@
+/* styling for the map */
+
+#map {
+    height: 40vh;
+    width: 50vw;
+    margin-left: 18%;
+}
+
+
+#map-text {
+    padding-top: 1em;
+}
+
+.map-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+    #description {
+        font-size: 2em;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+
+
+      #pac-input {
+    background-color: rgba(243, 243, 243, 0.6);
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 50%;
+    min-height: 5vh;
+    position: relative!important;
+    left: 20%!important;
+    top: 80%!important;
+      }
+
+      #pac-input:hover {
+        border-color: rgb(236, 64, 73);
+      }
+
+      #title {
+        font-size: 2em;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+
+      #target {
+        width: 345px;
+      }
+
+@media screen and (max-width: 768px) {
+    #title {
+        font-size: 1em;
+        font-weight: 300;
+        padding: 2vw 2vh;
+    }
+
+    #pac-container {
+        padding-bottom: 6px;
+        margin-right: 6px;
+      }
+
+    #description {
+        font-size: 1em;
+      }
+
+}
+
+@media screen and (max-width: 667px) {
+    #map {
+    margin-left: 22%;
+}
+}
+    

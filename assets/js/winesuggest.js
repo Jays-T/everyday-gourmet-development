@@ -80,14 +80,16 @@ $(document).ready(function () {
         $("#suggestion-modal").on("shown.bs.modal", function () {
           //  Store option selected by user in selection variable
           let selection = $("#foodSelect option:selected").text();
+          let errormessage = "Oops! Did you forget to select a food?";
 
           let i;
           // compare selection and then iterate through mylinks array to pull the links(URL)
           for (let i = 0; i < mylinks.length; i++) {
-            if (selection === "Steak") {
+              
+               if (selection === "Steak") {
               //  the code will now target specific ID's, empty the contents of the target ID
-                                               //  and then add html including specific URL using 'else if' 
-              $("#suggestion-modal")
+                                               //  and then add html including specific URL
+              $(this)
                 .find("#link-wine-one")
                 .empty()
                 .html(
@@ -311,7 +313,17 @@ $(document).ready(function () {
                     mylinks[8][3] +
                     '" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'
                 );
-            }
+            } else if (selection === "Choose...") {
+                  // if no food was selected it will return error message
+                $(this).find("#link-wine-one").empty();
+                $(this).find("#link-wine-two").empty();
+                $(this).find("#link-wine-three").empty();
+                $(this).find("#wine-one").empty();
+                $(this).find("#wine-two").empty();
+                $(this).find("#wine-three").empty();
+                $(this).find("#wine-text").empty().html(errormessage);
+
+              }
           }
           // after adding the relevant links, target specific information returned from API
           // and pass into the relevant ID'd elements html

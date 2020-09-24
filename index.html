@@ -31,18 +31,17 @@
     <!-- Navigation -->
 
     <header id="home">
-
       <nav id="navigation" class="navbar navbar-fixed-transparent rounded">
         <ul class="nav nav-ul-flex-sm">
-              <li class="nav-item">
-              <a
-                class="smooth-scroll navbar-brand font-montserrat light-text"
-                href="#home"
-              >
-                <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
-                <span class="sr-only">home</span>
-                </a>
-                </li>
+          <li class="nav-item">
+            <a
+              class="smooth-scroll navbar-brand font-montserrat light-text"
+              href="#home"
+            >
+              <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only">home</span>
+            </a>
+          </li>
           <li class="nav-item">
             <a
               id="wine-pairing"
@@ -75,7 +74,6 @@
           </li>
         </ul>
       </nav>
-
     </header>
 
     <!--End of Navigation-->
@@ -85,7 +83,9 @@
     <section>
       <div class="container-fluid main-bg">
         <div class="main-headlines">
-          <h2 class="hero-text font-montserrat uppercase light-text border-thin">
+          <h2
+            class="hero-text font-montserrat uppercase light-text border-thin"
+          >
             Every day <span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h2>
@@ -112,7 +112,8 @@
               <br />
               <span class="uppercase">EveryDay</span>
               <span class="fancy-text fancy-large text-spacing">G</span
-              ><span class="fancy-text fancy-small text-spacing">ourmet</span><br />
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span
+              ><br />
               <br />
               A premier wine pairing site.<br />
               <br />
@@ -146,8 +147,10 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <!-- Modal body -->
-             <h5 class="center-text border-thin">
-              <span class="uppercase font-montserrat text-spacing">EveryDay</span>
+            <h5 class="center-text border-thin">
+              <span class="uppercase font-montserrat text-spacing"
+                >EveryDay</span
+              >
               <span class="fancy-text fancy-large">G</span
               ><span class="fancy-text fancy-small text-spacing">ourmet</span>
               <button
@@ -159,7 +162,7 @@
               </button>
             </h5>
             <h4 class="font-montserrat dark-text uppercase center-text">
-            <br />
+              <br />
               Suggested Wines
             </h4>
             <div id="pairingText" class="rounded">
@@ -201,23 +204,65 @@
               </div>
               <div class="modal-content center-text">
                 <!--paired text for wine selection-->
-                <p id="wine-text" class="font-montserrat border-thin text-spacing"></p>
+                <p
+                  id="wine-text"
+                  class="font-montserrat border-thin text-spacing"
+                ></p>
                 <button
-                type="button"
-                class="close close-modal fancy-thin text-spacing"
-                data-dismiss="modal"
-              >
-                <span class="fancy-text fancy-large uppercase">C</span>lose
-              </button>
+                  type="button"
+                  class="close close-modal fancy-thin text-spacing"
+                  data-dismiss="modal"
+                >
+                  <span class="fancy-text fancy-large uppercase">C</span>lose
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- End of Modal -->
-      
+      <!-- Error Modal -->
+      <div class="modal fade" id="error-modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <h5 class="center-text border-thin">
+              <span class="uppercase font-montserrat text-spacing"
+                >EveryDay</span
+              >
+              <span class="fancy-text fancy-large">G</span
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span>
+              <button
+                type="button"
+                class="close close-modal font-montserrat fancy-large uppercase"
+                data-dismiss="modal"
+              >
+                ×
+              </button>
+            </h5>
+            <h4 class="font-montserrat dark-text uppercase center-text">
+              <br />
+              Error
+            </h4>
+            <div class="modal-content center-text">
+              <!--paired text for wine selection-->
+              <p
+                id="error-text"
+                class="font-montserrat border-thin text-spacing"
+              ></p>
+              <button
+                type="button"
+                class="close close-modal fancy-thin text-spacing"
+                data-dismiss="modal"
+              >
+                <span class="fancy-text fancy-large uppercase">C</span>lose
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Error Modal -->
     </section>
-    
 
     <!-- Footer / Main service/Wine Pairing section  -->
 
@@ -231,15 +276,17 @@
             <span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small text-spacing">ourmet</span>
           </h2>
-              <a
-              class="btn font-montserrat uppercase border-thin btn-colors light-texttext-spacing"
-              href="https://www.wine.com"
-              target="_blank"
-              role="button"
-            >
-              Shop Wines Online</a>
+          <a
+            class="btn font-montserrat uppercase border-thin btn-colors light-texttext-spacing"
+            href="https://www.wine.com"
+            target="_blank"
+            role="button"
+          >
+            Shop Wines Online</a
+          >
           <p>
-            Don't know which wine to choose?<br /> Let us suggest a fantastic pairing.<br />
+            Don't know which wine to choose?<br />
+            Let us suggest a fantastic pairing.<br />
             All you have to do is let us know, what's on the menu...
           </p>
           <div class="input-group mb-3">
@@ -276,7 +323,9 @@
       <!-- Social Media Links -->
 
       <div class="row social-media-center content-anchor">
-        <div class="col-sm-10 center-text social-media-links card-footer shadow-up rounded">
+        <div
+          class="col-sm-10 center-text social-media-links card-footer shadow-up rounded"
+        >
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.facebook.com">
@@ -341,6 +390,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/winesuggest.js"></script>
+    <script src="assets/js/winesuggestrefactored.js"></script>
   </body>
 </html>

@@ -147,7 +147,7 @@ html h1 {
     border-top: solid .5px rgb(173, 158, 159);
     border-bottom: solid .5px rgb(173, 158, 159);
     transition: all .2s ease-in-out; 
-    transform: scaleX(1.4);
+    /* transform: scaleX(1.4); */
 }
 
 body a:hover {

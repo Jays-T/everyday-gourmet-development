@@ -82,16 +82,40 @@ $(document).ready(function () {
     let selection = $("#foodSelect option:selected").text();
 
     if (selection === "Choose...") {
-
         $("#error-modal").modal("show"); // open/show modal
-
-        $("#error-modal").on("shown.bs.modal"), function() {
-            
-            $(this).getAll("#error-text").empty().html(errormessage);
-        }
+        $("#error-modal").on("shown.bs.modal", function () {
+            $(this).find("#error-text").empty().html(errormessage);
+        });
     } else {
-        alert('Not working');
+        $.ajax({
+            url:
+                "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?maxPrice=50&food=" +
+                $("#foodSelect option:selected").text().toLowerCase(),
+            headers: {
+            "x-rapidapi-host":
+            "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+            "x-rapidapi-key": "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
+        },
+            type: "GET",
+            success: function(result) {
+                $("#suggestion-modal").modal("show"); // open/show modal
+                $("#suggestion-modal").on("shown.bs.modal", function(){
+                    const filteredLinks = myLinks.filter(link => link.foodType === selection);
+                    // Populate SHOP links
+                    $(this).find("#link-wine-one").empty().html(`<a href="${filteredLinks[0].links[0]}
+                    " target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>`);
+                    $(this).find("#link-wine-two").empty().html(`<a href="${filteredLinks[0].links[1]}
+                    " target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>`);
+                    $(this).find("#link-wine-three").empty().html(`<a href="${filteredLinks[0].links[2]}
+                    " target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>`);
+                    // Populate Modal with api result
+                    $(this).find("#wine-one").empty().html(`${result['pairedWines'][0]}`);
+                    $(this).find("#wine-two").empty().html(`${result['pairedWines'][1]}`);
+                    $(this).find("#wine-three").empty().html(`${result['pairedWines'][2]}`);
+                    $(this).find("#wine-text").empty().html(`${result['pairingText']}`);
+                });
+            }
+        });
     }
   });
 });
-

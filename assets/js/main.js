@@ -49,13 +49,3 @@ $(".list-inline-item").mouseleave(function () {
   $(this, "i").removeClass("zoom");
   $(this).siblings().removeClass("blur");
 });
-
-// Targetting the buttons in the wine suggestion modal
-
-$(".btn-blur").mouseenter(function () {
-  $(this).siblings().addClass("blur");
-});
-
-$(".btn-blur").mouseleave(function () {
-  $(this).siblings().removeClass("blur");
-});

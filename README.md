@@ -1,4 +1,4 @@
-# <a href="https://jays-t.github.io/everyday-gourmet/">Everyday Gourmet</a> - Everyday Gourmet
+# <a href="https://jays-t.github.io/everyday-gourmet-development/">Everyday Gourmet</a> - Everyday Gourmet
 
 * This project is purely for educational purposes.
 
@@ -167,7 +167,7 @@ Phones tested:
    5. I clicked on the 'Settings' tab near the top of the page and scrolled down to the 'GitHub Pages' section.
    6. I selected the Source as the 'Master Branch' as all the site content and files are stored in and built from the 'Master Branch'.
    7. GitHub provided me with a direct link to the deployed site.
-   8. You can view the deployed site here: <a href="https://jays-t.github.io/everyday-gourmet/" target="_blank">Everyday Gourmet</a>
+   8. You can view the deployed site here: <a href="https://jays-t.github.io/everyday-gourmet-development/" target="_blank">Everyday Gourmet</a>
 
 ## There are no differences between the currently deployed site and the development version at this time.
 

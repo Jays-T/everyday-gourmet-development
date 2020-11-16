@@ -147,9 +147,11 @@ Phones tested:
 
 **Major Bugs**
 * Bug #1: if user select == 'Choose...' : **Bug Description** In the Choose Food section if the option 'Choose...' is chosen, the code will break and return wines #2 and #3 from the previous selection. The user will have to refresh the page in order for the food select/wine pairing function to work correctly again. This bug re-occurred on every device tested.
-  * Bug #1 status:  Unresolved
+  * Bug #1 status:  
+  ## Resolved
 * Bug #2: form auto-clear : **Bug Description** On the contact page after sending an email the email form does not automatically clear itself.
-  * Bug #2 status:  Unresolved
+  * Bug #2 status:  
+  ## Resolved
 **Minor Bugs**
 * Minor Bug #1: smooth-scroll : **Bug Description** On some devices, notably the Huawei P20 Lite, the smooth-scroll function sometimes does not scroll all the way to the bottom of the landing page. The bug was only encountered occasionally and most noticeably when the phone seemed to be under load having immediately previously executed some other function.
   * Ways to possibly re-create the bug based on site testing: 

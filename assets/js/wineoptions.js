@@ -76,7 +76,8 @@ const myLinks = [
 
 
 $(document).ready(function () {
-    $("#foodSelect").change(function () {
+
+    $("#foodSelect").change(function () {       
         // check which food option is selected
         var errormessage = "Oops! Did you forget to select a cuisine?";
         let selection = $("#foodSelect option:selected").text();
@@ -102,7 +103,7 @@ $(document).ready(function () {
                 success: function(result) {
                     $("#suggestion-modal").modal("show"); // open/show modal
                     $("#suggestion-modal").on("shown.bs.modal", function(){
-                        const filteredLinks = myLinks.filter(link => link.foodType === selection);
+                        let filteredLinks = myLinks.filter(link => link.foodType === selection);
                         // Populate SHOP links
                         $(this).find("#link-wine-one").empty().html(`<a href="${filteredLinks[0].links[0]}
                         " target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>`);

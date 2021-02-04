@@ -225,8 +225,8 @@ through <a href="https://css-tricks.com/apply-a-filter-to-a-background-image/" t
 
 ## Acknowledgements
 
-## Thank you SO SO MUCH to my mentor **@rheyannmagcalas_mentor** for all the help and great tips she gave me while I was developing and then working on this project and for helping me to finally solve the issue with my API GET script... I agonized for 5 days unable to get it to work and in the end it was such a simple fix and I was overcomplicating my code.
-## Thank you to h4xnoodle for your advice and consistently reminding me not to overcomplicate things. 
+* Thank you SO SO MUCH to my mentor **@rheyannmagcalas_mentor** for all the help and great tips she gave me while I was developing this project.
+* Thank you to h4xnoodle for your advice and consistently reminding me not to overcomplicate things. 
 
 # FAIR-USE COPYRIGHT DISCLAIMER
 
